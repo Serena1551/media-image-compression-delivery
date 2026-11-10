@@ -1,0 +1,17 @@
+{
+  "name": "media-compression-delivery",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types src/compression_decision.test.ts",
+    "run": "node --experimental-strip-types src/media_delivery.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  },
+  "dependencies": {
+    "zod": "^3.23.0"
+  }
+}
